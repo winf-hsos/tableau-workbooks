@@ -6,4 +6,4 @@ This repository contains a growing collection of Tableau workbooks I use in teac
 
 # Credits
 
-Many of the inspiration and charts are originally from the book [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/visualizing-amounts.html).
+Many of the inspiration and charts are originally from the book [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/).
