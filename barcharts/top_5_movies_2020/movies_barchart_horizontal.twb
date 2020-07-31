@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20193.20.0614.2306                               -->
+<workbook original-version='18.1' source-build='2019.3.9 (20193.20.0614.2306)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='worksheet'>
+      <format attr='font-size' value='15' />
+      <format attr='color' value='#000000' />
+      <format attr='font-weight' value='bold' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Top 5 Movies 2020 - Movies' inline='true' name='federated.0lf0t2g0uyndwm0zyxoxc0pp5elo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Top 5 Movies 2020 - Movies' name='textscan.1gi4pd509y8mu910ds9wa068osyd'>
+            <connection class='textscan' directory='C:/Users/nimeseth/Downloads' filename='Top 5 Movies 2020 - Movies.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1gi4pd509y8mu910ds9wa068osyd' name='Top 5 Movies 2020 - Movies.csv' table='[Top 5 Movies 2020 - Movies#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='rank' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='real' name='gross' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Top 5 Movies 2020 - Movies.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rank]</local-name>
+            <parent-name>[Top 5 Movies 2020 - Movies.csv]</parent-name>
+            <remote-alias>rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[Top 5 Movies 2020 - Movies.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gross</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gross]</local-name>
+            <parent-name>[Top 5 Movies 2020 - Movies.csv]</parent-name>
+            <remote-alias>gross</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='real' default-format='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' name='[gross]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/code/tableau-workbooks/barcharts/top_5_movies_2020/Top 5 Movies 2020 - Movies.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/31/2020 01:23:38 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Top 5 Movies 2020 - Movies' increment-value='%null%' refresh-type='create' rows-inserted='5' timestamp-start='2020-07-31 13:23:38.995' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Top 5 Movies 2020 - Movies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Top 5 Movies 2020 - Movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gross</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gross]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gross</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Top 5 Movies 2020 - Movies.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.482669' measure-ordering='alphabetic' measure-percentage='0.517331' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Highest Grossing Movies in 2020'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Top 5 Movies 2020 - Movies' name='federated.0lf0t2g0uyndwm0zyxoxc0pp5elo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lf0t2g0uyndwm0zyxoxc0pp5elo'>
+            <column datatype='real' default-format='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' name='[gross]' role='measure' type='quantitative' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gross]' derivation='Sum' name='[sum:gross:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[none:title:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[sum:gross:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[sum:gross:qk]' scope='cols' value='Gross (million USD)' />
+            <encoding attr='space' class='0' field='[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[sum:gross:qk]' field-type='quantitative' major-origin='0.0' major-spacing='20000000.0' minor-origin='0.0' minor-show='false' minor-spacing='10000000.0' scope='cols' type='space' />
+            <format attr='auto-subtitle' class='0' field='[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[sum:gross:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[none:title:nk]' value='104' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[none:title:nk]' value='344' />
+            <format attr='background-color' field='[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[sum:gross:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[sum:gross:qk]' value='c&quot;$&quot;#,##0,,M;(&quot;$&quot;#,##0,,M)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <dropline drop-when='selected' haslabel='false' x-axis='true' y-axis='false' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>The movie </run>
+                <run bold='true'>&lt;[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[none:title:nk]&gt; </run>
+                <run>made</run>
+                <run bold='true'> &lt;[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[sum:gross:qk]&gt;</run>
+                <run> in 2020.</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#6abceb' />
+                <format attr='mark-transparency' value='206' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='979' />
+                <format attr='maxwidth' value='979' />
+                <format attr='minheight' value='520' />
+                <format attr='maxheight' value='520' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[none:title:nk]</rows>
+        <cols>[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[sum:gross:qk]</cols>
+      </table>
+      <simple-id uuid='{CBF408BD-709F-4403-86FB-DD9608E85AFB}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Highest Grossing Movies in 2020'>
+      <cards>
+        <edge name='left'>
+          <strip size='228'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0lf0t2g0uyndwm0zyxoxc0pp5elo].[none:title:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{31F3CDF2-8FF4-462C-B0EB-6F8D7000E6AD}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Highest Grossing Movies in 2020' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
