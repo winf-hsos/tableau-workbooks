@@ -6,7 +6,7 @@ This repository contains a growing collection of Tableau workbooks I use in teac
 
 # How to use
 
-Navaigate to a folder with visualizations that you would like to open in Tableau. Download the two files:
+Navigate to a folder with visualizations that you would like to open in Tableau. Download the two files:
 
 - `*.twb`
 - `*.hyper`
